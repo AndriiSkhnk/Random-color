@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.color__block {
+    padding: 20px 10px 10px 10px;
+    background-color: #ededed;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+.color-generator {
+    width: 300px;
+    height: 300px;
+    background-color: #000;
+}
+
+.text, .Hex {
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    font-size: 18px;
+}
