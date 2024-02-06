@@ -5,6 +5,6 @@ allText.addEventListener('click', function(){
 
     navigator.clipboard.writeText(textCopy.innerHTML);
 
-    alert('Text copied to clipboard');
+    alert('Color copied to clipboard');
 
 });
