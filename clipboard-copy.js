@@ -1,6 +1,7 @@
 const textCopy = document.querySelector('.Hex');
+const allText = document.querySelector('.color-code');
 
-textCopy.addEventListener('click', function(){
+allText.addEventListener('click', function(){
 
     navigator.clipboard.writeText(textCopy.innerHTML);
 
