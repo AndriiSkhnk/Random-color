@@ -9,7 +9,7 @@ The Random Color Generator is a simple web application that generates random col
 1. Opening the Application: Simply open the HTML file in a web browser.
 1. Popup Window: Read the greeting and instructions displayed in the popup window.
 1. Generating Random Colors: Click on the black square to get a new random color.
-1. Copying to the clipboard: Click on the color HEX.
+1. Copying to the clipboard: Click on the color HEX code.
 
 ### Technologies Used
 
