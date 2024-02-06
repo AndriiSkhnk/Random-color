@@ -1,18 +1,88 @@
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.wrap {
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+/* Popup -----------------------------*/
+
+.pop-up {
+    position: fixed;
+    display: grid;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    align-items: center;
+    justify-content: center;
+}
+
+.pop-up__box {
+    background-color: #fff;
+    width: 350px;
+    height: 350px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.title {
+    text-align: center;
+}
+
+.instruction {
+    margin-top: 25px;
+}
+
+.instruction p {
+    text-align: center;
+    font-weight: 500;
+}
+
+.instruction ol {
+    margin-top: 20px;
+    list-style-position: inside;
+}
+
+.instruction ol li{
+    margin-top: 10px;
+    font-weight: 400;
+} 
+
+.pop-up__button {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.pop-up__button button {
+    padding: 12px 40px;
+    border: none;
+    background-color: rgb(78, 175, 128);
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.pop-up.pop-up-closed {
+    display: none;
+} 
+
+/* Color Generator -----------------------------*/
+
 .color__block {
-    padding: 20px 10px 10px 10px;
+    padding: 20px 15px 15px 15px;
     background-color: #ededed;
     border-radius: 20px;
     text-align: center;
@@ -22,11 +92,16 @@ body {
 .color-generator {
     width: 300px;
     height: 300px;
-    background-color: #000;
+    background-color: #000000;
 }
 
+
 .text, .Hex {
-    font-family: 'Roboto', sans-serif;
     color: #000000;
     font-size: 18px;
+    margin-top: 8px;
+}
+
+.Hex {
+    cursor: pointer;
 }

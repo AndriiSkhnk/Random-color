@@ -12,18 +12,16 @@ colorGenerator.addEventListener('click', function(){
     let green = Math.floor(Math.random() * 256);
     let blue = Math.floor(Math.random() * 256);
 
+    let redHex = red.toString(16).padStart(2, '0');
+    let greenHex = green.toString(16).padStart(2, '0');
+    let blueHex = blue.toString(16).padStart(2, '0');
+
+    let hexCode = `#${redHex}${greenHex}${blueHex}`
 
     this.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
     colorRGB.innerHTML = `RGB (${red}, ${green}, ${blue})`;
 
-
-        let redHex = red.toString(16).padStart(2, '0');
-        let greenHex = green.toString(16).padStart(2, '0');
-        let blueHex = blue.toString(16).padStart(2, '0');
-
-        let hexCode = `#${redHex}${greenHex}${blueHex}`
-
-        hexColor.innerHTML = hexCode.toUpperCase(); 
+    hexColor.innerHTML = hexCode.toUpperCase(); 
     
 });
 

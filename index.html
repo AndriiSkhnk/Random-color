@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Random color</title>
 </head>
@@ -15,14 +15,34 @@
             <div class="color__block">
                 <div class="color-generator"></div>
                 <div class="color-code">
-                    <p class="text">Click on square</p>
+                    <p class="text">Click on black square</p>
                     <p class="Hex"></p>
                 </div>
             </div>
         </div>
+
+        <div class="pop-up">
+            <div class="pop-up__box">
+                <h2 class="title">Welcome to Random Color Generator!</h2>
+                <div class="instruction">
+                    <p>How to use it</p>
+                    <ol>
+                        <li>If you want to generate the color tap on the black square.</li>
+                        <li>Click again if you need a different color.</li>
+                        <li>If you want to copy color to your clipboard click on the text.</li>
+                    </ol>
+                </div>
+                <div class="pop-up__button">
+                    <button>Got It!</button>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 
     <script src="script.js"></script>
+    <script src="popup.js"></script>
+    <script src="clipboard-copy.js"></script>
 </body>
 </html>
